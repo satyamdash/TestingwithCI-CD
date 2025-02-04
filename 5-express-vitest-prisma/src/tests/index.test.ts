@@ -20,6 +20,7 @@ describe("POST /sum", () => {
         a: 1,
         b: 2
       });
+      console.log("hey");
 
       expect(prismaClient.sum.create).toHaveBeenCalledWith({
         data: {
